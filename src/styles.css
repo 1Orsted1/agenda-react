@@ -1,0 +1,85 @@
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.general-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+/*---ContactList-Style---*/
+
+.main-container {
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-container {
+    background-color: lime;
+    overflow: scroll;
+    padding: 0;
+
+    border: 2px solid #ccc;
+
+    /* font-size: 120%;*/
+    font-size: calc(0.8em + 1vw);
+    font-family: Arial, sans-serif;
+
+    -webkit-overflow-scrolling: touch;
+    width: 30vw;
+    height: 49vh;
+    margin: 5% 5%;
+}
+.contact-name {
+    padding: 2px 6px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*---DetailComponent----*/
+
+.detail-container {
+    background-color: lime;
+    width: 50vw;
+    height: calc(15em + 2vw);
+    margin: 5% 5% 0 0;
+    /* display: inline-block;*/
+}
+
+.userData {
+    height: 80%;
+    background-color: #6a737c;
+    margin: 1% 1%;
+    margin-top: 0%;
+}
+
+.userData p {
+    text-align: center;
+    margin-top: 1%;
+}
+.UDN {
+    font-size: calc(1em + 2vw);
+}
+
+.UDP {
+    font-size: calc(0.4em + 2vw);
+}
+
+.UDE {
+    font-size: calc(0.1em + 1.9vw);
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    background-color: #6a737c;
+    margin: 1% 1%;
+}
