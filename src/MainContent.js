@@ -1,7 +1,8 @@
 import React from "react";
 import UserData from "./UserData.js";
-import UserItem from "./components/UserItem.js";
+//import UserItem from "./components/UserItem.js";
 import DetailComponent from "./components/DetailComponent.js";
+import "./styles.css";
 
 class MainContent extends React.Component {
     constructor() {
@@ -15,14 +16,13 @@ class MainContent extends React.Component {
     handleClick(event) {}
 
     render() {
-        const UserComponent = this.state.userContact.map((item) => {
-            return <UserItem item={item} key={item.id} />;
-        });
+        // const UserComponent = this.state.userContact.map((item) => {
+        //     return <UserItem item={item} key={item.id} />;
+        // });
         const ContactName = this.state.userContact.map((item) => {
             return (
-                <li>
+                <li key={item.id}>
                     <p
-                        id={item.key}
                         className="contact-name"
                         onClick={() => {
                             alert(item.name);
@@ -34,9 +34,6 @@ class MainContent extends React.Component {
             );
         });
 
-        {
-            console.log(UserComponent);
-        }
         return (
             <div className="main-container">
                 <ul className="list-container">{ContactName}</ul>

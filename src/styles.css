@@ -1,29 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 body {
     background-color: whitesmoke;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: "Work Sans", sans-serif;
 }
 
 .general-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: orange;
-    margin: 0;
-    padding: 0;
+    background-color: whitesmoke;
 }
 
 /*---ContactList-Style---*/
 
 .main-container {
     height: 100vh;
-    background-color: red;
+    background-color: #fbf9f1;
     display: flex;
     justify-content: space-between;
 }
 
 .list-container {
-    background-color: lime;
+    background-color: #fdcd35;
+    color: #2b3747;
     overflow: scroll;
     padding: 0;
 
@@ -31,12 +29,15 @@ body {
 
     /* font-size: 120%;*/
     font-size: calc(0.8em + 1vw);
-    font-family: Arial, sans-serif;
 
     -webkit-overflow-scrolling: touch;
     width: 30vw;
-    height: 49vh;
+    height: 54vh;
     margin: 5% 5%;
+    border-radius: 1rem;
+}
+.list-container p:hover {
+    background-color: #fcef50;
 }
 .contact-name {
     padding: 2px 6px;
@@ -46,7 +47,6 @@ body {
 /*---DetailComponent----*/
 
 .detail-container {
-    background-color: lime;
     width: 50vw;
     height: calc(15em + 2vw);
     margin: 5% 5% 0 0;
@@ -55,9 +55,12 @@ body {
 
 .userData {
     height: 80%;
-    background-color: #6a737c;
+    background-color: #b1d9e5;
     margin: 1% 1%;
     margin-top: 0%;
+    padding: 3%;
+    border-radius: 1rem;
+    color: #2b3748;
 }
 
 .userData p {
@@ -79,7 +82,116 @@ body {
 .btn-cont {
     display: flex;
     justify-content: space-between;
-    height: 15%;
-    background-color: #6a737c;
+    height: 10%;
     margin: 1% 1%;
+    padding: 2%;
+}
+
+.btn-cont button {
+    font-size: calc(0.4em + 1vw);
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    width: calc(6em + 2vw);
+    height: calc(2em + 0.8vh);
+}
+
+.btnEdit {
+    background-color: #1883ba;
+}
+
+.btnAdd {
+    background-color: #2ba746;
+}
+.btnEdit:hover {
+    color: #ffffff;
+    background-color: #1900dc;
+}
+.btnAdd:hover {
+    color: #ffffff;
+    background-color: #3cd800;
+}
+
+/*/////////////////////////////////*/
+
+/*/////header/////*/
+
+header {
+    background-color: #2b3748;
+    width: 100%;
+    height: calc(5rem + 4.5vh);
+    margin-top: -1.4rem;
+}
+
+.headerC {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerC p {
+    padding-top: 1%;
+    padding-left: 5%;
+    font-size: calc(1.5em + 1vh);
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.headerC ul {
+    padding-right: 5%;
+    padding-top: calc(0.9rem + 0.8vh);
+    font-size: calc(0.5em + 1vh);
+    font-weight: 700;
+}
+
+.headerC li {
+    margin: 1rem;
+    padding-top: 10%;
+    display: inline;
+}
+
+.headerC button {
+    margin-top: 2%;
+    font-size: calc(0.4em + 1vw);
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    width: calc(5em + 2vw);
+    height: calc(2em + 0.8vh);
+    background-color: #fdcd35;
+}
+.headerC button:hover {
+    background-color: #fcef50;
+}
+
+/*-------Footer--------*/
+
+footer {
+    background-color: #2b3748;
+    width: 100%;
+    height: calc(5rem + 4.5vh);
+    margin-top: -1.4rem;
+}
+
+.listadoRedes {
+    display: flex;
+    justify-content: center;
+    margin-left: -1.4em;
+}
+
+.listadoRedes li {
+    display: inline;
+    padding-right: 5%;
+    padding-top: 6vh;
+    list-style: none;
+}
+.listadoRedes a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.listadoRedes a:hover {
+    color: #fdcd35;
 }
